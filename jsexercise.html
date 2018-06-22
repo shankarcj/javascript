@@ -1,0 +1,81 @@
+<html>
+<head> </head>
+<body>
+<br>
+<br>
+  <p id="squ"> </p>
+<script>
+
+var num ;
+function squaring(num){
+  return num * num ;
+}
+ document.getElementById("squ").innerHTML ="the suare of the number 2 is "+" "+ squaring(2);
+
+</script><br>
+<p id="addi"> </p>
+<p id="multi"> </p>
+<p id="sub"> </p>
+<p id="divi"> </p>
+<script>
+
+var  num1 ;
+var  num2 ;
+
+function addNum(num1,num2){
+  return num1 + num2 ;
+}
+function multinum(num1,num2){
+  return num1 * num2 ;
+}
+function subtractnum(num1,num2){
+  return num1 - num2 ;
+}
+function dividenum(num1,num2){
+  return num1 / num2 ;
+}
+document.getElementById('addi').innerHTML = "The addition of the two numbers is"+" "+ addNum(5,6);
+document.getElementById('multi').innerHTML = "The multiplication of the two numbers is"+" "+multinum(5,6);
+document.getElementById('sub').innerHTML = "The subtraction of the two numbers is " + " "+subtractnum(6,5);
+document.getElementById('divi').innerHTML = "The division of the two numbers is"+" "+dividenum(6,2);
+</script>
+
+<p id="volume"> </p>
+
+<script>
+var length;
+var height;
+var width;
+
+function volume(length, height, width){
+  return length * width*height ;
+}
+document.getElementById('volume').innerHTML = "the volume of the cuboid"+ " "+volume(10,20,40);
+</script>
+<p id="info"> </p>
+<p id="com"></p>
+<script>
+var firstname="Nimal",
+lastname="Raj",
+age=15,
+city="Kandy";
+document.getElementById("info").innerHTML = "My name is "+firstname+"."+"I'm "+age+" years old."+"I live in"+city+".";
+var x="Course Name: BIT"
+y="Course Fee: Rs 150 000"
+z="Start Date: 12.06.2018"
+w="Center: Our Office";
+document.getElementById("com").innerHTML= x+"<br>"+y+"<br>"+z+"<br>"+w;
+
+
+</script>
+
+
+<script>
+
+window.alert("hello world")
+
+</script>
+
+
+</body>
+</html>
